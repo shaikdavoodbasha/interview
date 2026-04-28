@@ -8,10 +8,8 @@ const HomePage = () => {
         fetch("https://pokeapi.co/api/v2/pokemon").then((res)=>res.json()).then((res)=>setData(res.results)).catch((err)=>console.log(err))
             
         } catch (error) {
-            console.log(error)
-            
+            console.log(error)  
         }
-
     },[])
 console.log(data)
   return (
